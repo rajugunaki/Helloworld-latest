@@ -6,7 +6,7 @@
 <title> Microdegree Devops Training 2023 </title>
 <style>
   body {
-    background-color: black;
+    background-color: white;
   }
 </style>
 </head>
