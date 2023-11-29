@@ -3,16 +3,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> SBI M C bANK </title>
+<title> Microdegree Devops Training 2023 </title>
 <style>
   body {
-    background-color: red;
+    background-color: black;
   }
 </style>
 </head>
 <body>
-<h1>SBI M C bANK </h1>
-<p> Welcome to  SBI M C bANK.</p>
+<h1>Microdegree Devops Training </h1>
+<p> Welcome to Microdegree Training.</p>
 </body>
 </html>
 
