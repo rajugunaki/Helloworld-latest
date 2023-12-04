@@ -3,16 +3,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Microdegree Devops Training 2023 </title>
+<title> Welcome to Cloudenabled </title>
 <style>
   body {
-    background-color: Yellow;
+    background-color: pink;
   }
 </style>
 </head>
 <body>
-<h1>Microdegree Devops Training 2023 </h1>
-<p> Welcome to Microdegree Training 2023.</p>
+<h1>Welcome to Cloudenabled </h1>
+<p>Welcome to Cloudenabled .</p>
 </body>
 </html>
 
