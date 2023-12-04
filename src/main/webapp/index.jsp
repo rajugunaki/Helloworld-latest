@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to AWS </title>
+<title> Welcome to Cloudenabled </title>
 <style>
   body {
     background-color: pink;
