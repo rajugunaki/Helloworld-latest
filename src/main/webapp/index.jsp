@@ -6,7 +6,7 @@
 <title> Welcome to Cloudenabled 2022</title>
 <style>
   body {
-    background-color: pink;
+    background-color: white;
   }
 </style>
 </head>
