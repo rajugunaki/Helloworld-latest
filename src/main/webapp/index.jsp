@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to AWS Devops Training </title>
+<title> Welcome to AWS </title>
 <style>
   body {
     background-color: pink;
@@ -11,8 +11,8 @@
 </style>
 </head>
 <body>
-<h1>Welcome to aws devops training </h1>
-<p>Welcome to aws devops training .</p>
+<h1>Welcome to aws </h1>
+<p>Welcome to aws .</p>
 </body>
 </html>
 
