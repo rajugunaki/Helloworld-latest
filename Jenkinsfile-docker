@@ -15,17 +15,17 @@ pipeline {
         }
         stage('3rd stage - build docker image ') {
             steps {
-                git 'docker build -t helloworld-latest .'
+                sh 'docker build -t my-project .'
             }
         }
         stage('4th stage - tag the image ') {
             steps {
-                sh ' docker tag helloworld-latest rajugunaki123/helloworld-latest:1.0 . '
+                sh ' docker tag my-project rajugunaki123/my-project '
             }
         }
         stage('4th stage - run a container with the docker image') {
             steps {
-                sh ' docker run -itd --name helloworld-container -p 8282:8080 helloworld-latest '
+                sh ' docker run -itd --name helloworld-container -p 8282:8080 rajugunaki123/my-project '
                 sh ' docker stop helloworld-container || true '
                 sh ' docker rm helloworld-container || true '
             }
@@ -37,7 +37,7 @@ pipeline {
         }
         stage('6th stage - docker push') {
             steps {
-                sh ' docker push rajugunaki123/helloworld-latest:1.0 '
+                sh ' docker push rajugunaki123/my-project:1.0 '
             }
         }
     }
