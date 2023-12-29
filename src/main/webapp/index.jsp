@@ -3,16 +3,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to Cloudenabled </title>
+<title> Welcome to Devops </title>
 <style>
   body {
-    background-color: blue;
+    background-color: white;
   }
 </style>
 </head>
 <body>
-<h1>Welcome to Cloudenabled </h1>
-<p>Welcome to Cloudenabled </p>
+<h1>Welcome to Devops  </h1>
+<p>Welcome to Devops </p>
 </body>
 </html>
 
