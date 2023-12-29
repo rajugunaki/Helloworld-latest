@@ -11,7 +11,7 @@
 </style>
 </head>
 <body>
-<h1>Welcome to Clodenabled </h1>
+<h1>Welcome to Cloudenabled </h1>
 <p>Welcome to Cloudenabled </p>
 </body>
 </html>
