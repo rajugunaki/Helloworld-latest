@@ -3,10 +3,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to Cloudenabled 2023</title>
+<title> Welcome to Cloudenabled </title>
 <style>
   body {
-    background-color: white;
+    background-color: blue;
   }
 </style>
 </head>
