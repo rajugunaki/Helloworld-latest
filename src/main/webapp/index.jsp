@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to Devops </title>
+<title> Welcome to Training </title>
 <style>
   body {
     background-color: white;
@@ -11,8 +11,8 @@
 </style>
 </head>
 <body>
-<h1>Welcome to Devops  </h1>
-<p>Welcome to Devops </p>
+<h1>Welcome to Training  </h1>
+<p>Welcome to Training </p>
 </body>
 </html>
 
