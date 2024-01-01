@@ -1,0 +1,51 @@
+pipeline {
+    agent { label "projecta" }
+
+    stages {
+        stage('1st stage - git clone') {
+            steps {
+                git 'https://github.com/rajugunaki/Helloworld-latest.git'
+            }
+        }
+        stage('2nd stage - build') {
+            steps {
+                sh 'yum install maven -y'
+                sh 'mvn clean package'
+            }
+        }
+        stage('3rd stage - install docker') {
+            steps {
+                sh 'sudo yum install docker -y'
+                sh ' sudo systemctl start docker'
+                sh ' sudo systemctl enable docker'
+            }
+        }
+        stage('4th stage - build docker image') {
+            steps {
+                sh 'docker build -t hello-world .'
+            }
+        }
+        stage('5th stage - tag the image') {
+            steps {
+                sh 'docker tag hello-world rajugunaki123/hello-world'
+            }
+        }
+        stage('6th stage - run a new container with docker image') {
+            steps {
+                sh 'docker stop demo || true'
+                sh ' docker rm demo || true '
+                sh 'docker run -itd --name demo -p 8283:8080 rajugunaki123/hello-world'
+            }
+        }
+        stage('7th stage - login to dockerhub') {
+            steps {
+                sh 'docker login -u rajugunaki123 -p Docker@1234'
+            }
+        }
+        stage('8th stage - push the image to dockerhub') {
+            steps {
+                sh 'docker push rajugunaki123/hello-world'
+            }
+        }
+    }
+}
