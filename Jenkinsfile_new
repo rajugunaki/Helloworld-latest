@@ -1,43 +1,22 @@
 pipeline {
-    agent { label "slave1" }
+    agent { label "projecta" }
 
     stages {
-        stage('Stage1-cloning project') {
+        stage('1st stage - git clone') {
             steps {
-                echo 'cloning project from git'
-                git 'https://github.com/vincloud2/Helloworld-latest.git'
+               git 'https://github.com/rajugunaki/Helloworld-latest.git'
             }
         }
-        stage('Stage2 -maven build') {
+        stage('2nd stage - build project') {
             steps {
-                echo 'Maven build'
-                sh 'yum install maven -y'
-                sh 'mvn clean package'
-            }
-        } 
-        stage('Stage3-Deploy') {
-            steps {
-                echo 'Hello World -Deploy'
-                deploy adapters: [tomcat8(credentialsId: 'admin_tomcat', path: '', url: 'http://54.169.120.161:8080/')], contextPath: null, war: '**/*.war'
+               sh 'yum install maven -y'
+               sh 'mvn clean package'
             }
         }
-        stage('Stage4-Testenv') {
+        stage('3rd stage - deploy the war file') {
             steps {
-                echo 'Hello World -Deploy'
-                deploy adapters: [tomcat8(credentialsId: 'admin_tomcat', path: '', url: 'http://54.169.120.161:8080/')], contextPath: null, war: '**/*.war'
+               deploy adapters: [tomcat8(credentialsId: 'tomcat_admin', path: '', url: 'http://172.31.37.231:8080')], contextPath: null, war: '**/*.war'
             }
         }
-        stage('Stage6-UAT') {
-            steps {
-                echo 'Hello World -Deploy'
-                deploy adapters: [tomcat8(credentialsId: 'admin_tomcat', path: '', url: 'http://54.169.120.161:8080/')], contextPath: null, war: '**/*.war'
-            }
-        }        
-        stage('Stage6-Production') {
-            steps {
-                echo 'Hello World -Deploy'
-                deploy adapters: [tomcat8(credentialsId: 'admin_tomcat', path: '', url: 'http://54.169.120.161:8080/')], contextPath: null, war: '**/*.war'
-            }
-        }        
     }
 }
