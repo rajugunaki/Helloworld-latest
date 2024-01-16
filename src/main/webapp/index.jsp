@@ -11,8 +11,8 @@
 </style>
 </head>
 <body>
-<h1>Welcome to Training  </h1>
-<p>Welcome to Training </p>
+<h1>Welcome to Cloud and DevOps Training  </h1>
+<p>Welcome to Cloud and DevOps Training </p>
 </body>
 </html>
 
