@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to Training </title>
+<title> Welcome to Cloud and DevOps Training!! </title>
 <style>
   body {
     background-color: white;
