@@ -3,7 +3,7 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Welcome to Cloud and DevOps Training!! </title>
+<title> Hello from Microdegree </title>
 <style>
   body {
     background-color: white;
@@ -11,8 +11,8 @@
 </style>
 </head>
 <body>
-<h1>Welcome to Cloud and DevOps Training  </h1>
-<p>Welcome to Cloud and DevOps Training </p>
+<h1>Hello from Microdegree </h1>
+<p>Hello from Microdegree </p>
 </body>
 </html>
 
