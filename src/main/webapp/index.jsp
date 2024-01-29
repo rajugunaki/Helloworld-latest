@@ -11,8 +11,8 @@
 </style>
 </head>
 <body>
-<h1>Hello from Bangalore </h1>
-<p>Hello from Bangalore </p>
+<h1> Welcome to Cloud and DevOps training! </h1>
+<p> Welcome to Cloud and DevOps training! </p>
 </body>
 </html>
 
