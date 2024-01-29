@@ -3,16 +3,16 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title> Hello from Microdegree </title>
+<title> Hello world </title>
 <style>
   body {
-    background-color: white;
+    background-color: red;
   }
 </style>
 </head>
 <body>
-<h1>Hello from Microdegree </h1>
-<p>Hello from Microdegree </p>
+<h1>Hello from Bangalore </h1>
+<p>Hello from Bangalore </p>
 </body>
 </html>
 
