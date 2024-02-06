@@ -6,7 +6,7 @@
 <title> Welcome to my Webapp </title>
 <style>
   body {
-    background-color: red;
+    background-color: white;
   }
 </style>
 </head>
